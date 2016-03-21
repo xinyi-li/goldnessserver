@@ -26,7 +26,7 @@ public class GoddessApplication extends Application<GoddessConfiguration> {
         final DBI jdbi=factory.build(environment,config.getDataSourceFactory(),"sqlite");
         final Goddessdao gdao=jdbi.onDemand(Goddessdao.class);
         gdao.creategoldnesstable();
-        Goddess g1=new Goddess(0,"mary","li",22,"342@qq.com",168,120,"15828006196");
+        Goddess g1=new Goddess(0,"mary","li",22,"396275915@qq.com",168,120,"15828006196");
         Goddess g2=new Goddess(1,"mary","wang",21,"sfagffdg@qq.com",169,115,"18001350693");
         gdao.add(g1);
         gdao.add(g2);

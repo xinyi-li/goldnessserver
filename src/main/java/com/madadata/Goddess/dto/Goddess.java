@@ -31,12 +31,15 @@ public class Goddess {
     private String mobilePhone;
 
 
-    public Goddess(long id, String firstName, String lastName, int age, String email,int height, int weight, String mobilePhone) {
+
+
+    public Goddess(long id, String firstName, String lastName, int age, String email, int height, int weight, String mobilePhone) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.email=email;
+
         this.height = height;
         this.weight = weight;
         this.mobilePhone = mobilePhone;
@@ -56,6 +59,11 @@ public class Goddess {
     @JsonProperty
     public int getAge() {
         return age;
+    }
+
+    @JsonProperty
+    public String getEmail() {
+        return email;
     }
     @JsonProperty
     public int getHeight() {

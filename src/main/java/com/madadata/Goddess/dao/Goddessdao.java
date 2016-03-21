@@ -25,9 +25,7 @@ public interface Goddessdao {
             "mobilephone varchar(15))")
     void creategoldnesstable();
 
-    @SqlUpdate ("insert into goddess" +
-            "(id,firstname,lastname,age,email,height,weight,mobilephone" +
-            "values(:id,:firstName,:lastName,:age,:email,:height,:weight,:mobilePhone)")
+    @SqlUpdate ("insert into goddess (id,firstname,lastname,age,email,height,weight,mobilephone) values (:id,:firstName,:lastName,:age,:email,:height,:weight,:mobilePhone)")
     void add(@BindBean Goddess goddess);
 
     @SqlUpdate("delete from goddess" +
